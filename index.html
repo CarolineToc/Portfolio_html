@@ -104,12 +104,14 @@ body {
 }
 </style>
 
-<div id="a" class="container-fluid">
-  <h2 ><center>Partie A - Généralités</center></h2>
-  <h3 id="a1">A-1 Présentation du portfolio</h3>
+<div id="a1" class="container-fluid">
+  <h2><center>Partie A - Généralités</center></h2>
+  <h3>A-1 Présentation du portfolio</h3>
   <p> Ce portfolio fait état de mes connaissances acquises lors de mon cursus à l'INSA et plus précisement lors de ma dernière année au sein du PTP 
   Innovation Smart Systems. Il se décompose en trois grandes partie : descriptive, technique et analytique. 
-  <h3 id="a2">A-2 Présentation de mon Curriculum Vitae</h3>   
+</p></div>
+  <div id="a2" class="container-fluid">
+  <h3>A-2 Présentation de mon Curriculum Vitae</h3>    
   <h4>A-2.1 Identification</h4> 
   <p><b>NOM prénom : </b> MARTOCQ Caroline</p>
   <p><b>Age : </b> 22 ans</p>
@@ -329,66 +331,48 @@ body {
 </div>
 
 <div id="b1" class="container-fluid bg-grey">
-  <h2 ><center>Partie B - Partie descriptive</center></h2>
+  <h2><center>Partie B - Partie descriptive</center></h2>
   <p> Cette partie a pour but de décrire les différentes expériences issues de mon parcours à l'INSA, qui m'ont permises
   de développer mes compétences en rapport avec ce PTP ISS. </p>
   <h3 id="b1">B-1 Présentation des expériences en lien avec le PTP</h3>
-	<table class="table ">
-		<thead>
-		  <tr>
-		  <strong><center class="bg-orange">Tableau récapitulatif de l'ensemble du parcours</center></strong>
-		  </tr>
-		
-		  <tr>
-			<th>Date</th>
+	<table class="table "><thead><tr><strong><center class="bg-orange">Tableau récapitulatif de l'ensemble du parcours</center></strong>
+		  </tr><tr><th>Date</th>
 			<th>Durée</th>
 			<th>Contexte</th>
 			<th>Fonction(s)</th>
-		  </tr>
-		</thead>
-		<tbody>		
-		  <tr>
-			<td>du 13/10/16 au 27/01/17</td>
+		  </tr></thead><tbody><tr><td>du 13/10/16 au 27/01/17</td>
 			<td>3 mois et demi</td>
 			<td>Projet intégrateur ISS</td>
 			<td>Developpement software embarqué</td>
-		  </tr>
-		  <tr>
-			<td>du 03/10/16 au 28/11/16</td>
+		  </tr><tr><td>du 03/10/16 au 28/11/16</td>
 			<td>2 mois</td>
-			<td>Microcontrôleurs Open-Source Hardware (MOSH) - Elaboration d'un capteur de gaz</td>
+			<td>Microcontrôleurs Open-Source Hardware (MOSH) - Elaboration capteur de gaz</td>
 			<td>Etudiant</td>
-		  </tr>
-		  <tr>
-			<td>du 03/10/16 au 28/11/16</td>
+		  </tr><tr><td>du 03/10/16 au 28/11/16</td>
 			<td>2 mois</td>
 			<td>Projet personnel, contrôle d'une guirlande de noël</td>
 			<td>Développeur</td>
-		  </tr>
-		  <tr>
-			<td>du 13/06/16 au 16/09/16</td>
+		  </tr><tr><td>du 13/06/16 au 16/09/16</td>
 			<td>3 mois</td>
 			<td>Stage technicien à Myfox</td>
 			<td>Stagiaire en mesures RF</td>
-		  </tr>
-		  <tr>
-			<td>du 08/06/15 au 28/09/15</td>
+		  </tr><tr><td>du 08/06/15 au 28/09/15</td>
 			<td>3 mois</td>
 			<td>Stage technicien à ELTA</td>
 			<td>Stagiaire assistant ingénieur base de données</td>
-		  </tr>
-		</tbody>
-	</table>
-	  
-  <p>Dans la suite de ce portfolio, les expériences faites au cours de ma dernière année en ISS vont faire 
+		  </tr></tbody></table><p>Dans la suite de ce portfolio, les expériences faites au cours de ma dernière année en ISS vont faire 
   l'objet d'un développement.</p>
-  <h3>B-2 Projet intégrateur </h3>
-  <p> Le projet intégrateur de la 5ème année ISS est le projet principal développé par groupe de 4/5 étudiants </p>
-  <h4>B-2.1 Environnement et contexte</h4>
-  <h4>B-2.2 Fonction</h4>
+
   
-  <h3>B-3 MOSH - Elaboration d'un capteur de gaz </h3>
+  <div id="b2" class="container-fluid bg-grey">
+  <h3>B-2 Projet intégrateur </h3>
   <h4>B-2.1 Environnement et contexte</h4>
+  <p> Le projet intégrateur de la 5ème année ISS est le projet principal développé par groupe de 4/5 étudiants </p>
+  <h4>B-2.2 Fonction</h4>
+</div>
+<div id="b3" class="container-fluid bg-grey">
+  <h3>B-3 MOSH - Elaboration d'un capteur de gaz </h3>
+    <h4>B-2.1 Environnement et contexte</h4>
   <p> Ce projet s'inscrit dans le cadre du cours Smart Devices de la 5ème année ISS. 
   Le projet a été de développer un capteur de gaz intélligent. Pour ce faire, nous avons élaboré un capteur de gaz en salle blanche. 
   Nous avons également réalisé un shield pour Arduino Uno afin qu'il puisse s'interfacer.
@@ -397,6 +381,10 @@ body {
   <p>Accompagnée de ma binôme Coralie Naminzo, nous avons réalisé un shield pour Arduino à l'aide des logiciels LTSpice et Eagle.
 La première partie a consisté à établir une chaine de mesure et d'amplification analogique. Dans un second temps nous avons réalisé le routage du shield sur Eagle.
 Une semaine au laboratoire de l'AIME nous a permis de fabriquer le capteur de gaz qui réalise les mesures.  </p>
+  
+</div>
+
+
   
 	
 </div>
