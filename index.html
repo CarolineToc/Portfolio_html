@@ -419,11 +419,32 @@ A week at the AIME laboratory allowed us to manufacture the gas sensor that perf
 
 <div id="b3" class="container-fluid bg-grey">
   <h3>B-4  Personnal project, control of a LED garland </h3>
-    <h4>B-4.1 Environment and context</h4>
-  <p> Personally, I wanted to apply the skills acquired during MOSH course but also to deepen them.
-  That is why I decided to develop this project consisting of lighting a garland of LEDs with a Tweet from an Arduino Mega board and an Ethernet shield.</p>
-  <h4>B-4.2 Description and explanation</h4>
-<p> The material used for this project is : </p>
+<div class="row">
+	<div class="col-sm-10">
+		<h4>B-4.1 Environment and context</h4>
+		<p> Personally, I wanted to apply the skills acquired during MOSH course but also to deepen them.
+	  That is why I decided to develop this project consisting of lighting a garland of LEDs with a Tweet from an Arduino Mega board and an Ethernet shield.</p>
+		<h4>B-4.2 Description and explanation</h4>
+		<p align="justify"> To make this project, I used : <br>
+		- 		Arduino Mega <br>
+		-		Ethernet shield and an ethernet cable<br>
+		-		Relay <br>
+		-		LED garland <br>
+		-		Thingspeak account <br>
+		-		LCD screen <br>
+		<br>
+		Thingspeak is an online service allowing to create private or public channels containing data. Thoses data are accessible through REST requests with an API key if it is private.
+		In my Thingspeak account, I configured a channel to receive tweets with a special hashtag. The communication with the Twitter API is made by Thingspeak.
+		Thanks to the ethernet shield, the Arduino is sending a REST request (GET) every 5 minutes to the Thingspeak server. It retrieves the last tweet in the channel and compares it with
+		the last tweet retrieved. If a new tweet is detected, it will display it on the LCD screen and will light the LED guarland during 10 seconds. For this last part, the Arduino board is 
+		putting the digital pin controlling the relay to high. The relay is connected to the garland by short-circuiting the initial switch. The garland has its own source of power (two batteries).</p>
+	</div>
+  <div class="col-sm-2">
+	<img src="image/IMG_5698.PNG" class="rounded float-xs-right" style="max-height: 400px; max-width: 400px;">
+  </div>
+</div>
+
+   
   </p>  
 </div>
 
